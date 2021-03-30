@@ -30,7 +30,7 @@ Example:
 handler := commander.New(";;", "826378911444500501")
 
 // add command to handler
-handler.Register("example", "Example command", commands.InfoCommand, 100)
+handler.Register("example", "Example command", ExampleCommand, 100)
 
 // add handler to discord session
 session.AddHandler(handler.Execute)
