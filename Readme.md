@@ -38,3 +38,9 @@ session.AddHandler(handler.Execute)
 
 <strong>Note:</strong> The permission system is not working in v0.0.1
 
+
+#Examples
+
+---
+- <a href="https://github.com/MathisBurger/commander/blob/master/examples/default.go">Default example</a>
+
