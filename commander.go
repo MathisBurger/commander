@@ -40,7 +40,7 @@ func (c *Commander) Register(
 // executes a command with given
 // parameters and sends not found,
 // if the command was not found
-func (c *Commander) execute(s *discordgo.Session, m *discordgo.MessageCreate) {
+func (c *Commander) Execute(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if strings.HasPrefix(m.Content, c.Prefix) {
 		if c.CommandChannel == "" || c.CommandChannel == m.ChannelID {
 			command := strings.Split(strings.Split(m.Content, ";;")[1], " ")
