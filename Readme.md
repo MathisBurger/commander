@@ -9,7 +9,8 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" height="100">
 </div>
 
-#Information
+
+# Information
 
 ---
 The Commander is a lightweight command handler build for discordgo. You can use it
@@ -17,7 +18,7 @@ to control the command execution of your commands.
 It is easy to setup and use. Test it out yourself!
 
 
-#Documentation
+# Documentation
 
 Install the library with:
 ```
@@ -39,7 +40,7 @@ session.AddHandler(handler.Execute)
 <strong>Note:</strong> The permission system is not working in v0.0.1
 
 
-#Examples
+# Examples
 
 ---
 - <a href="https://github.com/MathisBurger/commander/blob/master/examples/default.go">Default example</a>
