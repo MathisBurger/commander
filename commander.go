@@ -20,11 +20,15 @@ type Commander struct {
 // returns the instance which can be used for
 // registration and execution
 func New(prefix string, cmdChannel string) *Commander {
-	return &Commander{
+	cmder := &Commander{
 		prefix,
 		cmdChannel,
 		map[string]Command{},
 	}
+
+	cmder.Commands["help"] = Command{"help", "help command", placeholderCommand, 1}
+
+	return cmder
 }
 
 // register a new command
