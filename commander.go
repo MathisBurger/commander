@@ -47,7 +47,7 @@ func (c *Commander) Register(
 func (c *Commander) Execute(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if strings.HasPrefix(m.Content, c.Prefix) {
 		if c.CommandChannel == "" || c.CommandChannel == m.ChannelID {
-			command := strings.Split(strings.Split(m.Content, ";;")[1], " ")
+			command := strings.Split(strings.Split(m.Content, c.Prefix)[1], " ")
 			if command[0] == "help" {
 				helpCommand(s, m, c)
 			}
