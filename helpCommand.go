@@ -1,7 +1,6 @@
 package commander
 
 import (
-	"fmt"
 	"github.com/bwmarrin/discordgo"
 	embed "github.com/clinet/discordgo-embed"
 	"strconv"
@@ -22,6 +21,6 @@ func helpCommand(s *discordgo.Session, m *discordgo.MessageCreate, c *Commander)
 	}
 	_, err := s.ChannelMessageSendEmbed(m.ChannelID, emb.MessageEmbed)
 	if err != nil {
-		fmt.Println("Cannot execute help command")
+		panic(err.Error())
 	}
 }
